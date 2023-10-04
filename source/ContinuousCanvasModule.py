@@ -6,6 +6,7 @@ class ContinuousCanvasModule(VisualizationElement):
     Possible elements to visualize and their properties:
         portrayal = { # rectangle
             'Shape': 'rect',
+            'Layer': int number,
             'w': width,
             'h': hight,
             'Color': color | list of colors for gradient,
@@ -18,6 +19,7 @@ class ContinuousCanvasModule(VisualizationElement):
             }
         portrayal = { # circle
             'Shape': 'circle',
+            'Layer': int number,
             'r': radius,
             'Color': color | list of colors for gradient,
             'Filled': boolean True or False,
@@ -29,6 +31,7 @@ class ContinuousCanvasModule(VisualizationElement):
             }
         portrayal = { # arrow/vector
             'Shape': 'arrow',
+            'Layer': int number,
             'w': width,
             'h': height or length,
             'angle': the direction where the arrow is pointing,
@@ -41,6 +44,7 @@ class ContinuousCanvasModule(VisualizationElement):
             }
         portrayal = { # custom image
             'Shape': path to image,
+            'Layer': int number,
             'size': length of each sides of the image,
             'text': inscribed text, # NOT NECESSARY
             'text_color': color # NOT NECESSARY
